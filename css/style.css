@@ -24,11 +24,12 @@ body {
 }
 .search button {
   width: 100px;
-  height: 30px;
+  height: 35px;
   border-radius: 5px;
-  border: 1px solid #fd6161;
+  border: 1px solid #fd616190;
   padding: 5px;
   margin-left: 10px;
+  margin-bottom: 2px;
   box-shadow: 0px 5px;
   transition: background 0.2s ease-in-out, color 0.2s ease-in-out,
     box-shadow 0.2s ease-in-out;
@@ -102,13 +103,26 @@ header {
 }
 
 @media screen and (max-width: 640px) {
+  .search input {
+    width: 200px;
+    padding: 5px;
+  }
   .calander-grid-dates {
     width: 150px;
     grid-template-columns: repeat(5, 30px);
   }
   .calander-grid-weeks {
-    width: 280px;
-
-    grid-template-columns: repeat(7, 40px);
+    width: calc(37px * 7);
+    grid-template-columns: repeat(7, 37px);
+  }
+  .grid-item {
+    font-size: 12px;
+    padding: 0;
+    font-weight: 600;
+  }
+  .grid-item-weeks {
+    font-size: 12px;
+    padding: 0;
+    font-weight: 600;
   }
 }
