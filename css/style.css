@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  background-color: #3a424699;
+  background-color: #a8d5e5;
 }
 .container {
   display: flex;
@@ -49,18 +49,18 @@ header {
 
 .calander-grid-dates {
   display: grid;
-  width: 500px;
+  width: 250px;
   height: 500px;
   background: #0fb0a8a4;
-  grid-template-columns: repeat(5, 100px);
+  grid-template-columns: repeat(5, 50px);
   grid-template-rows: repeat(8, 50px);
 }
 .calander-grid-weeks {
   display: grid;
-  width: 700px;
+  width: 490px;
   height: 500px;
   background: #ea9307a4;
-  grid-template-columns: repeat(7, 100px);
+  grid-template-columns: repeat(7, 70px);
   grid-template-rows: repeat(10, 50px);
 }
 .grid-item {
