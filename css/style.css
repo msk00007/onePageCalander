@@ -103,30 +103,30 @@ header {
 }
 
 @media screen and (max-width: 640px) {
-  .year {
-    font-size: 32px;
-    font-weight: 900;
-  }
   .search input {
     width: 200px;
     padding: 5px;
   }
   .calander-grid-dates {
-    width: 150px;
-    grid-template-columns: repeat(5, 30px);
+    width: calc(25px * 5);
+    grid-template-columns: repeat(5, 25px);
   }
   .calander-grid-weeks {
-    width: calc(37px * 7);
-    grid-template-columns: repeat(7, 37px);
+    width: calc(35px * 7);
+    grid-template-columns: repeat(7, 35px);
   }
   .grid-item {
-    font-size: 12px;
+    font-size: 14px;
     padding: 0;
-    font-weight: 600;
+    font-weight: 800;
   }
   .grid-item-weeks {
     font-size: 12px;
     padding: 0;
-    font-weight: 600;
+    font-weight: 800;
+  }
+  .year {
+    font-size: 32px;
+    font-weight: 900;
   }
 }
