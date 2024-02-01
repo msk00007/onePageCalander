@@ -103,6 +103,10 @@ header {
 }
 
 @media screen and (max-width: 640px) {
+  .year {
+    font-size: 32px;
+    font-weight: 900;
+  }
   .search input {
     width: 200px;
     padding: 5px;
