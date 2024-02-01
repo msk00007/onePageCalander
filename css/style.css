@@ -100,3 +100,15 @@ header {
 .green {
   color: rgb(10, 184, 56);
 }
+
+@media screen and (max-width: 640px) {
+  .calander-grid-dates {
+    width: 150px;
+    grid-template-columns: repeat(5, 30px);
+  }
+  .calander-grid-weeks {
+    width: 280px;
+
+    grid-template-columns: repeat(7, 40px);
+  }
+}
