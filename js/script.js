@@ -75,11 +75,11 @@ for (let i = 0; i < 10; i++) {
 
 function generateCAl() {
   let input = document.querySelector("#YearValue").value;
-  if (input === "") {
+  if (input === "" || isNaN(input)) {
     alert("please enter year value !");
   } else {
     // loop for removing past month values
-
+    input = input.replace(/\s+$/, "");
     for (let i = 0; i < 3; i++) {
       for (let j = 0; j < 7; j++) {
         let Div = document.querySelector(
